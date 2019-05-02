@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PAYMENT</title>
+    <style>
+        body{
+           
+             background-color: #7d4fe1;
+        }
+ .payments{
+     text-align: center;
+     margin-top: 98px;
+    padding-top: 135px;
+ }
+    table{
+        margin: 0 auto;
+        text-align:center;
+   
+    }
+    option{
+        background-color: #7d4fe1;
+    }
+    input {
+        padding-top:10px;
+    }
+    select{   
+    background-color: #7d4fe1;
+    border: 2px solid white;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 14px;
+    padding: 5px;
+    height: 39px;    
+}
+    
+    
+
+    </style>
+</head>
+<body>
+    <div class="payments">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="TLRHY9U3PS7C2">
+        <table>
+            <tr><td  style="font-size: 20px;letter-spacing: 5px;word-spacing: 5px;color: #7c00ef"><input type="hidden" name="on0" value="event payments">EVENTS PAYMENT</td></tr><tr><td><select name="os0">
+                <option value="pay">pay &#8377;1,000.00 INR 503 </option>
+                 </option>
+            </select> </td></tr>
+            </table>
+        <input type="hidden" name="currency_code" value="INR">
+        <input type="image" src="images/paynow.png" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+        </form>
+
+                    </div>  
+
+</body>
+</html>
